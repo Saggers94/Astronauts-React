@@ -36,3 +36,123 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  padding-top: 56px;
+}
+
+.main_astronaut_img {
+  width: 400px;
+  height: 450px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#main_nav {
+  background-color: #0b3d91 !important;
+}
+
+#admin_nav {
+  background-color: #667afa !important;
+}
+
+#main_footer {
+  background-color: #0b3d91 !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+
+#admin_footer {
+  background-color: #667afa !important;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.title {
+  color: #2e151b;
+}
+
+.astronaut_image {
+  height: auto;
+  width: 90%;
+  /*margin: 0 auto;*/
+  /*display: block;*/
+  margin-top: 3%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+/*.astronaut_image + p.lead{
+    display: inline;
+}*/
+
+.hr_style {
+  height: 1px;
+  color: #000;
+}
+
+.lead_in_list {
+  padding-top: 10%;
+}
+
+.list {
+  /*margin-left:10%;*/
+  margin-bottom: 2%;
+}
+
+.mt-4 {
+  color: #2e151b;
+  text-decoration: underline;
+}
+
+h2,
+.h2 {
+  font-size: 1.8rem;
+}
+
+#login {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#register {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.form_header {
+  font-size: 20px;
+  color: #0b3d91;
+}
+
+.btn-color {
+  background-color: #0b3d91;
+  color: #fff;
+}
+
+#astronaut_table {
+  margin-bottom: 150px;
+}
+
+#create_form {
+  margin-top: 25px;
+  margin-bottom: 200px;
+}
+
+#edit_astronaut_image {
+  width: 200px;
+  height: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#email_container {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
