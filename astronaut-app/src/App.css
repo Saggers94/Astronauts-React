@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -58,8 +58,8 @@ body {
 
 #main_footer {
   background-color: #0b3d91 !important;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
   height: 50px;
   text-align: center;
