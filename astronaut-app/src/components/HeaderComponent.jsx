@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class HeadeComponent extends Component {
+export default class HeaderComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -53,7 +53,7 @@ export default class HeadeComponent extends Component {
                       Contact
                     </a>
                   </li>
-                  <li class="nav-item">
+                  {/* <li class="nav-item">
                     <a class="nav-link" href="#">
                       Login
                     </a>
@@ -62,7 +62,7 @@ export default class HeadeComponent extends Component {
                     <a class="nav-link" href="#">
                       Register
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
