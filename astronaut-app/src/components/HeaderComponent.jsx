@@ -1,10 +1,16 @@
 import React, { Component } from "react";
+import { createBrowserHistory } from "history";
 
 export default class HeaderComponent extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { path: "" };
+  }
+
+  componentDidMount() {
+    const history = createBrowserHistory();
+    this.state.path = history.location.pathname;
   }
   render() {
     return (
@@ -32,7 +38,7 @@ export default class HeaderComponent extends Component {
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="/">
+                    <a class="nav-link" href="/">
                       Home
                       <span class="sr-only">(current)</span>
                     </a>

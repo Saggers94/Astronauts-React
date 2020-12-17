@@ -4,14 +4,13 @@ import AstronautsServices from "../Services/AstronautsServices";
 export default class AstronautComponent extends Component {
   constructor(props) {
     super(props);
-
     this.state = { astronauts: [] };
   }
 
   componentDidMount() {
     AstronautsServices.getAstronauts().then((res) => {
       this.setState({ astronauts: res.data });
-      console.log(res.data);
+      //   console.log(res.data);
     });
   }
 
