@@ -28,7 +28,7 @@ export default class AstronautComponent extends Component {
                   <h2 class="mt-2">{astronaut.name}</h2>
                   <img
                     class="astronaut_image"
-                    src={`images/${astronaut.image}`}
+                    src={require(`../images/${astronaut.image}`).default}
                     alt="Astronaut Buzz Aldrin"
                   />
                 </div>

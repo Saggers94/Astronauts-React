@@ -6,6 +6,10 @@ class AstronautsServices {
   getAstronauts() {
     return axios.get(ASTRONAUT_BASE_URL);
   }
+
+  getAstronautById(id) {
+    return axios.get(ASTRONAUT_BASE_URL + "/" + id);
+  }
 }
 
 export default new AstronautsServices();

@@ -5,6 +5,7 @@ import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
 import HomeComponent from "./components/HomeComponent";
 import AstronautComponent from "./components/AstronautComponent";
+import DetailAstronautComponent from "./components/DetailAstronautComponent";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
               path="/astronauts"
               exact
               component={AstronautComponent}
+            ></Route>
+            <Route
+              path="/astronauts/:id"
+              exact
+              component={DetailAstronautComponent}
             ></Route>
             {/* <Route path="/about" exact component={AboutComponent}></Route> */}
             {/* <Route path="/contact" exact component={ContactComponent}></Route> */}
