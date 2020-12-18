@@ -6,6 +6,8 @@ import FooterComponent from "./components/FooterComponent";
 import HomeComponent from "./components/HomeComponent";
 import AstronautComponent from "./components/AstronautComponent";
 import DetailAstronautComponent from "./components/DetailAstronautComponent";
+import AboutComponent from "./components/AboutComponent";
+import ContactComponent from "./components/ContactComponent";
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
               exact
               component={DetailAstronautComponent}
             ></Route>
-            {/* <Route path="/about" exact component={AboutComponent}></Route> */}
-            {/* <Route path="/contact" exact component={ContactComponent}></Route> */}
+            <Route path="/about" exact component={AboutComponent}></Route>
+            <Route path="/contact" exact component={ContactComponent}></Route>
           </Switch>
         </div>
         <FooterComponent />

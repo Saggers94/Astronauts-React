@@ -10,9 +10,12 @@ export default class HomeComponent extends Component {
       <div>
         <section>
           <div class="container">
-            <div class="row">
+            <div class="row mt-3 mb-5">
               <div class="col col-xs-4">
-                <img src="images/astronaut.svg" class="main_astronaut_img" />
+                <img
+                  src={require("../images/astronaut.svg").default}
+                  class="main_astronaut_img"
+                />
               </div>
               <div class="col col-xs-8 align-self-center">
                 <h1 class="title">Famous Astronauts</h1>
