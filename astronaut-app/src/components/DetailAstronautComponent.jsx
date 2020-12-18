@@ -9,7 +9,7 @@ export default class DetailAstronautComponent extends Component {
       id: this.props.match.params.id,
       astronaut: {},
       image: "",
-      self: this,
+      category: "",
     };
   }
 
@@ -18,7 +18,9 @@ export default class DetailAstronautComponent extends Component {
       this.setState({
         astronaut: res.data,
         image: require("../images/" + res.data.image).default,
+        category: res.data.category.name,
       });
+      //   console.log(res.data.category.name);
     });
   }
 
@@ -70,7 +72,7 @@ export default class DetailAstronautComponent extends Component {
                   </p>
                   <p>
                     <strong class="font-weight-bold">Nationality: </strong>
-                    American
+                    {this.state.category}
                   </p>
                   <hr class="hr_style" />
                 </div>
