@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AstronautsServices from "../Services/AstronautsServices";
+import { Link } from "react-router-dom";
 
 export default class AstronautComponent extends Component {
   constructor(props) {
@@ -40,12 +41,12 @@ export default class AstronautComponent extends Component {
                     {astronaut.personal_data}
                   </p>
                   <p>
-                    <a
+                    <Link
                       href={`/astronauts/${astronaut.astronaut_id}`}
                       alt="Detail about Buzz Aldrin"
                     >
                       Read More
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <hr class="hr_style" />
