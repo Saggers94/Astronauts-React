@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { createBrowserHistory } from "history";
+import { Link } from "react-router-dom";
 
 export default class HeaderComponent extends Component {
   constructor(props) {
@@ -21,9 +22,9 @@ export default class HeaderComponent extends Component {
             id="main_nav"
           >
             <div class="container">
-              <a class="navbar-brand" href="/">
+              <Link class="navbar-brand" to="/">
                 FAMOUS ASTRONAUTS
-              </a>
+              </Link>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -38,26 +39,26 @@ export default class HeaderComponent extends Component {
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="/">
+                    <Link class="nav-link" to="/">
                       Home
                       <span class="sr-only">(current)</span>
-                    </a>
+                    </Link>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="/astronauts">
+                    <Link class="nav-link" to="/astronauts">
                       Astronauts
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/about">
+                    <Link class="nav-link" to="/about">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact">
+                    <Link class="nav-link" to="/contact">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                   {/* <li class="nav-item">
                     <a class="nav-link" href="#">

@@ -16,20 +16,21 @@ function App() {
         <HeaderComponent />
         <div className="container">
           <Switch>
-            <Route path="/" exact component={HomeComponent}></Route>
-            <Route path="/home" exact component={HomeComponent}></Route>
-            <Route
-              path="/astronauts"
-              exact
-              component={AstronautComponent}
-            ></Route>
-            <Route
-              path="/astronauts/:id"
-              exact
-              component={DetailAstronautComponent}
-            ></Route>
-            <Route path="/about" exact component={AboutComponent}></Route>
-            <Route path="/contact" exact component={ContactComponent}></Route>
+            <Route path="/" exact>
+              <HomeComponent />
+            </Route>
+            <Route path="/astronauts" exact>
+              <AstronautComponent />
+            </Route>
+            <Route path="/astronauts/:id" exact>
+              <DetailAstronautComponent />
+            </Route>
+            <Route path="/about" exact>
+              <AboutComponent />
+            </Route>
+            <Route path="/contact" exact>
+              <ContactComponent />
+            </Route>
           </Switch>
         </div>
         <FooterComponent />
