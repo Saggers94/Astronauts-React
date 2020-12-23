@@ -42,7 +42,7 @@ export default class AstronautComponent extends Component {
                   </p>
                   <p>
                     <Link
-                      href={`/astronauts/${astronaut.astronaut_id}`}
+                      to={`/astronauts/${astronaut.astronaut_id}`}
                       alt="Detail about Buzz Aldrin"
                     >
                       Read More

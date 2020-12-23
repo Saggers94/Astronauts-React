@@ -11,6 +11,7 @@ export default class DetailAstronautComponent extends Component {
       image: "",
       category: "",
     };
+    console.log(this.props.match.params.id);
   }
 
   componentDidMount() {
