@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const ASTRONAUT_BASE_URL = "http://localhost:9090/api/v1/astronauts";
+const ASTRONAUT_BASE_URL =
+  "https://springastronautsboot.herokuapp.com/api/v1/astronauts/";
 
 class AstronautsServices {
   getAstronauts() {
@@ -13,3 +14,5 @@ class AstronautsServices {
 }
 
 export default new AstronautsServices();
+
+//After npm run build you just need to drag and drop build folder on netlify
