@@ -9,6 +9,7 @@ class AstronautsServices {
   }
 
   getAstronautById(id) {
+    console.log(id);
     return axios.get(ASTRONAUT_BASE_URL + "/" + id);
   }
 }
